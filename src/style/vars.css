@@ -1,0 +1,11 @@
+:root {
+  --c-black: #0E1321;
+  --c-gray: #46506C;
+  --c-gray-light: #F2F5F8;
+  --c-white: #ffffff;
+  --c-link: #2C96FD;
+  --c-accent: #990DC2;
+  --c-blue: #8FC7FE;
+  --f-main-family: Poppins;
+  --f-main: var(--f-main-family), 'Arial', 'sans-serif';
+}

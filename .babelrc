@@ -1,0 +1,56 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "browsers": [
+            "> 0.5%", "last 2 versions", "Firefox ESR", "not dead", "not ie < 11"
+          ]
+        },
+        "useBuiltIns": "usage",
+        "corejs": "3",
+        "debug": false
+      }
+    ],
+    "vue"
+  ],
+  "env": {
+    "production": {
+      "presets": [
+        [
+          "@babel/preset-env",
+          {
+            "targets": {
+              "browsers": [
+                "> 0.5%", "last 2 versions", "Firefox ESR", "not dead", "not ie < 11"
+              ]
+            },
+            "useBuiltIns": "usage",
+            "corejs": "3",
+            "modules": false
+          }
+        ],
+        "vue"
+      ]
+    },
+    "test": {
+      "presets": [
+        [
+          "@babel/preset-env",
+          {
+            "targets": {
+              "node": "current"
+            }
+          }
+        ]
+      ]
+    }
+  },
+  "plugins": [
+    "@babel/plugin-transform-runtime",
+    "@babel/plugin-syntax-dynamic-import",
+    "@babel/plugin-syntax-class-properties",
+    "@babel/plugin-proposal-class-properties"
+  ]
+}
